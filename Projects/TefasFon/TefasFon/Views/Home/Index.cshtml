@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .fon-search {
+        text-align: center;
+    }
+
+    #searchInput {
+        margin: 5% 0.1%;
+        width: 57%; /* SearchBar Boyutunu Ayarlama */
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Merhaba Fon Detaylı İnceleme Adresine Hoş Geldiniz!</h1>
+    <p>Aşağıdaki Arama Butonundan Görüntülemek İstediğiniz Fonun Kodunu Yazarak Gerekli Bilgilere Ulaşabilirsiniz.</p>
+</div>
+
+<div class="fon-search">
+    <input type="text" id="searchInput" placeholder="Arama yap..." onkeypress="searchFonOnEnter(event)">
+    <button id="searchButton" onclick="searchFon()">Ara</button>
+</div>
+
+<script>function searchFonOnEnter(event) {
+        if (event.key === "Enter") {
+            searchFon();
+        }
+    }
+
+    function searchFon() {
+        var searchTerm = document.getElementById("searchInput").value;
+        searchTerm = searchTerm.replace(/\s/g, ''); // Boşlukları silme işlemi
+
+        if (searchTerm !== "") { // Boş bir terim kalmadığını kontrol ediyoruz
+            var baseUrl = "/FonView/"; // Controller URL
+            var searchUrl = baseUrl + encodeURIComponent(searchTerm.toUpperCase());
+            window.location.href = searchUrl;
+        }
+    }</script>

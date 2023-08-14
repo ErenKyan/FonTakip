@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{A1D7A09A-86F5-4949-9A29-C6689756CD53}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TefasFon PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TefasFon/Program.cs">
+    <Files>
+      <File FileName="TefasFon/Views/Fon/FonView.cshtml" Line="34" Column="8" />
+      <File FileName="TefasFon/Controllers/FonController.cs" Line="88" Column="2" />
+      <File FileName="TefasFon/Models/ErrorViewModel.cs" Line="20" Column="2" />
+      <File FileName="TefasFon/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TefasFon" expanded="True">
+            <Node name="TefasFon">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Fon" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

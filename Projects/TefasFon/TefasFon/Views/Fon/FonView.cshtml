@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Fon Verileri</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .center {
+            display: block;
+            margin: auto;
+            width: 60%;
+            border: 1px solid #EFEFEF;
+            padding: 0.1%;
+            text-align: center;
+        }
+
+            .center h1 {
+                margin: 0;
+            }
+
+        ul {
+            list-style-type: disc;
+            padding: 0.1%;
+            font-size: 13px;
+            text-align: center;
+        }
+
+            ul li strong {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5%;
+            }
+
+            ul li {
+                background-image: url(https://www.tefas.gov.tr/Images/border-gray-gradient.jpg);
+                background-position-x: right;
+                background-position-y: top;
+                background-size: initial;
+                background-repeat-x: no-repeat;
+                background-repeat-y: no-repeat;
+                background-attachment: initial;
+                background-origin: initial;
+                background-clip: initial;
+                background-color: initial;
+                display: inline-block;
+                margin: 0 20px;
+            }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 0.1%;
+            text-align: center;
+        }
+        #searchInput {
+            width: 57%; /* SearchBar Boyutunu Ayarlama */
+        }
+    </style>
+</head>
+<body>
+    <div class="fon-search">
+        <input type="text" id="searchInput" placeholder="Arama yap..." onkeypress="searchFonOnEnter(event)">
+        <button id="searchButton" onclick="searchFon()">Ara</button>
+    </div>
+
+    <div class="center">
+        @if (Model.DataList != null && Model.DataList.Count > 0)
+        {
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="13"><h1>@Model.DataList[0]</h1></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Son Fiyat (TL)</strong>
+                                    <span>@Model.DataList[1]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Günlük Getiri (%)</strong>
+                                    <span>@Model.DataList[2]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Pay (Adet)</strong>
+                                    <span>@Model.DataList[3]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Fon Toplam Değer (TL)</strong>
+                                    <span>@Model.DataList[4]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Kategorisi</strong>
+                                    <span>@Model.DataList[5]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Son Bir Yıllık Kategori Derecesi</strong>
+                                    <span>@Model.DataList[6]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Yatırımcı Sayısı (kişi)</strong>
+                                    <span>@Model.DataList[7]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <strong>Pazar Payı</strong>
+                                    <span>@Model.DataList[8]</span>
+                                </li>
+
+                            </ul>
+                        </td>
+                    </tr>
+
+                    @*<tr>
+                            <td>
+                                <div class="value-box">
+                                    <strong>1AY</strong><br>
+                                    @Model.DataList[9]
+                                </div>
+                            </td>
+                            <td>
+                                <div class="value-box">
+                                    <strong>3AY</strong><br>
+                                    @Model.DataList[10]
+                                </div>
+                            </td>
+                            <td>
+                                <div class="value-box">
+                                    <strong>6AY</strong><br>
+                                    @Model.DataList[11]
+                                </div>
+                            </td>
+                            <td>
+                                <div class="value-box">
+                                    <strong>1YIL</strong><br>
+                                    @Model.DataList[12]
+                                </div>
+                            </td>
+                        </tr>*@
+                </tbody>
+            </table>
+
+
+        }
+        else
+        {
+            <p>Veri bulunamadı.</p>
+        }
+    </div>
+
+
+    <div class="center">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                <strong>1AY</strong>
+                                <br>
+                                @Model.DataList[9]
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <strong>3AY</strong>
+                                <br>
+                                @Model.DataList[10]
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <strong>6AY</strong>
+                                <br>
+                                @Model.DataList[11]
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <strong>1YIL</strong>
+                                <br>
+                                @Model.DataList[12]
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function searchFonOnEnter(event) {
+            if (event.key === "Enter") {
+                searchFon();
+            }
+        }
+
+        function searchFon() {
+            var searchTerm = document.getElementById("searchInput").value;
+            searchTerm = searchTerm.replace(/\s/g, ''); // Boşlukları silme işlemi
+
+            if (searchTerm !== "") { // Boş bir terim kalmadığını kontrol ediyoruz
+                var baseUrl = "/FonView/"; // Controller URL
+                var searchUrl = baseUrl + encodeURIComponent(searchTerm.toUpperCase());
+                window.location.href = searchUrl;
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
