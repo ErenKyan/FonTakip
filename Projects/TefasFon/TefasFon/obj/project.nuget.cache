@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aZWFXSIDdAEdsLNPU6b6X/O8ABLsmbGTmqEMyNJCsLz+5gOQUqbZItqQX4fekbmq3i+HP8XD20Ps5xVp/m+V0w==",
+  "dgSpecHash": "yv6DEdccm2URHOnJk47zlXmx3hjidcCpQ9GjYF7c59d/l5+VY9aH39wNLUnocB0ZJBI+5Eh0but5JPke4hLyaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\erenk\\Source\\Repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj",
+  "projectFilePath": "C:\\Users\\erenk\\source\\repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erenk\\.nuget\\packages\\htmlagilitypack\\1.11.51\\htmlagilitypack.1.11.51.nupkg.sha512",
     "C:\\Users\\erenk\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\erenk\\Source\\Repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj": {}
+    "C:\\Users\\erenk\\source\\repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\erenk\\Source\\Repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj": {
+    "C:\\Users\\erenk\\source\\repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\erenk\\Source\\Repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj",
+        "projectUniqueName": "C:\\Users\\erenk\\source\\repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj",
         "projectName": "TefasFon",
-        "projectPath": "C:\\Users\\erenk\\Source\\Repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj",
+        "projectPath": "C:\\Users\\erenk\\source\\repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\TefasFon.csproj",
         "packagesPath": "C:\\Users\\erenk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\erenk\\Source\\Repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\obj\\",
+        "outputPath": "C:\\Users\\erenk\\source\\repos\\FonTakip\\Projects\\TefasFon\\TefasFon\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\erenk\\AppData\\Roaming\\NuGet\\NuGet.Config",
