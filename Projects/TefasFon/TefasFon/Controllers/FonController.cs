@@ -56,7 +56,7 @@ namespace TefasFon.Controllers
                     }
                 }
 
-
+                //repo deneme
                 // Verileri model aracılığıyla view'a taşıma
                 var model = new DataL
                 {
